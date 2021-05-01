@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReactNativeArIntegration.iml" filepath="$PROJECT_DIR$/.idea/modules/ReactNativeArIntegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ReactNativeArIntegration.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ReactNativeArIntegration.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/885046046/ReactNativeArIntegration.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/885046046/ReactNativeArIntegration.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/724709241/ReactNativeArIntegration.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/724709241/ReactNativeArIntegration.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1739515651/ReactNativeArIntegration.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/1739515651/ReactNativeArIntegration.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1312247202/ReactNativeArIntegration.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1312247202/ReactNativeArIntegration.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-767102918/ReactNativeArIntegration.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-767102918/ReactNativeArIntegration.react-native-screens.iml" />
     </modules>
   </component>
 </project>
