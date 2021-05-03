@@ -1,10 +1,12 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View,ScrollView } from 'react-native'
 import {styles} from './styles'
 export const Layout = ({children}) =>{
     return(
-        <View style={styles.layout}>
-            {children}
-        </View>
+        <ScrollView style={styles.ScrollView}>
+            <View style={styles.layout}>
+                {children}
+            </View>
+        </ScrollView>
     )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import {View, TextInput,Text} from 'react-native'
 import {styles} from './styles'
-import DropDownPicker from 'react-native-dropdown-picker';
+import {Picker} from '@react-native-picker/picker';
+import { Button } from '../Button';
 export const ProfileForm = () =>{
     return(
         <View style={styles.form}>
@@ -12,26 +13,17 @@ export const ProfileForm = () =>{
             <Text style={styles.text}>Teléfono</Text>
             <TextInput style={styles.input} />
             <Text style={styles.text}>Tipo de identificación</Text>
-            <DropDownPicker
-                items={[
-                    {label: 'USA', value: 'usa'},
-                    {label: 'UK', value: 'uk'},
-                    {label: 'France', value: 'france'},
-                ]}
-             
-                containerStyle={styles.input}
-                style={{backgroundColor: 'white'}}
-                itemStyle={{
-                    justifyContent: 'flex-start'
-                }}
-                dropDownStyle={{backgroundColor: '#fafafa'}}
-                onChangeItem={item => this.setState({
-                    country: item.value
-                })}
-            />
+            <View style={styles.selectContainer}>
+                <Picker >
+                    <Picker.Item label="Ruc" value="Ruc" />
+                    <Picker.Item label="Cedula" value="Cedula" />
+                    <Picker.Item label="Pasaporte" value="Pasaporte" />
+                </Picker>                
+            </View>
+           
              <Text style={styles.text}>Identificación</Text>
             <TextInput style={styles.input} />
-            
+            <Button title='Save'/>
         </View>
     )
 }

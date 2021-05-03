@@ -10,7 +10,9 @@ const logo=require('../Assets/img/logo.png')
 const Home = () =>{
     return(
         <Layout>
-            <Image style={styles.logoL} source={logo}/>
+            <View style={styles.logoContainer}>
+              <Image style={styles.logoL} source={logo}/>
+            </View>
         </Layout>
     )
 }
