@@ -131,9 +131,12 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.fresco:nativeimagefilters:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.fresco:nativeimagetranscoder:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.fresco:imagepipeline-base:2.0.0@aar" level="project" />
+    <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-picker_picker" />
+    <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-community_datetimepicker" />
     <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-community_masked-view" />
     <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-gesture-handler" />
     <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-safe-area-context" />
     <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-screens" />
+    <orderEntry type="module" module-name="ReactNativeArIntegration.react-native-svg" />
   </component>
 </module>

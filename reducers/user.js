@@ -1,11 +1,31 @@
-function user(state={login:false},action){
+function user(state={login:false,users:usersData,user:userData},action){
     switch(action.type){
         case 'LOGIN':{
-            console.log('dispatch')
-            console.log(action.playload)
+
             return{
                 ...state,
                 login:action.playload
+            }
+        }
+        case 'SET_USER':{
+          
+            return{
+                ...state,
+                user:action.playload
+            }
+        }
+        case 'ADD_USER':{
+            usersData.push(action.playload)
+            return{
+                ...state,
+                users:usersData
+            }
+        }
+        case 'CLEAR_USER':{
+          
+            return{
+                ...state,
+                user:userData
             }
         }
         default :{
@@ -13,4 +33,35 @@ function user(state={login:false},action){
         }
     }
 }
+
+const userData={
+    fullName:"",
+    email:"",
+    phone:"",
+    typeDNI:'Cedula',
+    dni:"",
+    password:''
+}
+const usersData=[{
+    fullName:"Camila",
+    email:"camila@correo.com",
+    phone:"099999999",
+    typeDNI:'Cedula',
+    dni:"099999999",
+    password:'252525'
+},{
+    fullName:"Camila",
+    email:"camila2@correo.com",
+    phone:"099999999",
+    typeDNI:'Cedula',
+    dni:"099999999",
+    password:'252525'
+},{
+    fullName:"Juan Pablo Salazar",
+    email:"juanzjck1996@gmail.com",
+    phone:"099999999",
+    typeDNI:'Cedula',
+    dni:"099999999",
+    password:'252525'
+}]
 export default user

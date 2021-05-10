@@ -6,7 +6,16 @@ export const styles=StyleSheet.create({
         borderRadius:20,
         borderWidth:1,
         margin:10,
-        width:300
+        width:300,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity: 0.36,
+        shadowRadius: 6.68,
+
+        elevation: 11,
     },
     text:{
         color:'white',

@@ -1,0 +1,63 @@
+import { StyleSheet } from 'react-native'
+
+export const styles = StyleSheet.create({
+    form:{
+       backgroundColor:'white',
+       height:'100%',
+       width:'100%',
+       padding:10,
+       alignContent:'center',
+       justifyContent:'center',
+       alignItems:'center',
+    },
+    input:{
+        backgroundColor:'white',
+        margin:10,
+        height:50,
+        borderColor:'black',
+        borderWidth:1,
+        width:'90%'
+    },
+    text:{
+        fontSize:20,
+        marginLeft:10,
+        marginBottom:3
+    },
+    selectItems:{
+        zIndex:3,
+    
+    },
+    selectContainer:{
+        backgroundColor:'white',
+        borderWidth:1,
+        width:'90%'
+    },
+    newUser:{
+        margin:15
+    },
+    contairnerOneSignOn:{
+        width:'100%',
+        backgroundColor:'red'
+    },
+    icon:{
+        width:50,
+        height:50,
+        resizeMode:'contain',
+        alignSelf:'center'
+    },
+    contentOneSignOn:{
+        justifyContent:'center',
+        alignContent:'center',
+        alignItems:'center',
+        width:'100%',
+    },
+    textOneSignOn:{
+        fontSize:20
+    },
+    iconsContainer:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        width:'100%',
+        marginTop:20
+    }
+})

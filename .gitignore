@@ -1,2 +1,4 @@
-./unity
+unity/
 node_modules/
+android/build/
+android/app/build/

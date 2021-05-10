@@ -23,6 +23,12 @@ import Notifications from './src/screens/Notifications'
 import ProductInfo from './src/screens/ProductInfo'
 import AddNotificacions from './src/screens/AddNotificacions'
 import ArProduct from './src/screens/ArProduct'
+import Login from './src/screens/Login'
+import Register from './src/screens/Register'
+import SingleSignOnO from './src/screens/SingleSignOnO'
+import SingleSignOnF from './src/screens/SingleSignOnF'
+import SingleSignOnG from './src/screens/SingleSignOnG'
+import FaceFilterUnity from './src/screens/FaceFilterUnity'
 //screens of login
 import Start from './src/screens/Start'
 
@@ -30,6 +36,8 @@ import Start from './src/screens/Start'
 import {HeaderMenu} from './src/components/HeaderMenu'
 import { Menu } from './src/components/Menu';
 import {connect} from 'react-redux'
+import { HeaderLogin } from './src/components/HeaderLogin';
+import FaceFilter from './src/screens/FaceFilter';
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 class App extends Component {
@@ -37,15 +45,7 @@ class App extends Component {
     super(props);
     this.state = {  }
   }
-  renderNoLoginMenu = () =>{
-    const optionScreen={}
-     return(
-       <Stack.Navigator initialRouteName="Home" headerMode='screen' >
-         <Stack.Screen name="Home" component={Home}   />
-        
-       </Stack.Navigator>
-     )
-  }
+
   renderPrincipalMenu = () =>{
    const optionScreen={
      header:(props={ scene, previous, navigation})=>{
@@ -59,7 +59,8 @@ class App extends Component {
         <Stack.Screen name="ProductInfo" component={ProductInfo} options={optionScreen}/>
         <Stack.Screen name="AddNotification" component={AddNotificacions} options={optionScreen}/>
         <Stack.Screen name="ProductScan" component={ArProduct} options={optionScreen}/>
-      
+        <Stack.Screen name="FaceScan" component={FaceFilter} options={optionScreen}/>
+        <Stack.Screen name="FaceScanUnity" component={FaceFilterUnity} options={optionScreen}/>
       </Stack.Navigator>
     )
   }
@@ -67,11 +68,22 @@ class App extends Component {
   LoginMenu = () =>{
     const optionScreen={
       header:(props={ scene, previous, navigation})=>{
-        return <></>
+        return HeaderLogin()
        }}
+    const optionScreen2={
+    header:(props={ scene, previous, navigation})=>{
+      return <></>
+    }}
+                
      return(
        <Stack.Navigator initialRouteName="Start" headerMode='screen' >
-         <Stack.Screen options={optionScreen} name="Start" component={Start} />
+         <Stack.Screen options={optionScreen2} name="Start" component={Start} />
+         <Stack.Screen options={optionScreen} name="Login" component={Login} />
+         <Stack.Screen options={optionScreen} name="Register" component={Register} />
+      
+         <Stack.Screen options={optionScreen2} name="SingleSignOnO" component={SingleSignOnO} />
+         <Stack.Screen options={optionScreen2} name="SingleSignOnF" component={SingleSignOnF} />
+         <Stack.Screen options={optionScreen2} name="SingleSignOnG" component={SingleSignOnG} />
       
        </Stack.Navigator>
      )

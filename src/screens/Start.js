@@ -12,10 +12,7 @@ const logo=require('../Assets/img/logo.png')
 const Start = (props) =>{
     const handleLogin = () =>{
      
-        props.dispatch({
-            type:'LOGIN',
-            playload:true
-        })
+      props.navigation.navigate('Login');
     }
     return(
         <Layout>

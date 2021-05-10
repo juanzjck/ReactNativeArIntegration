@@ -1,35 +1,32 @@
-import React from 'react';
-import { FlatList, View } from 'react-native';
+import React, {useEffect,useState} from 'react';
+import { FlatList, View,Text } from 'react-native';
 import { NotificationItem } from '../NotificationItem';
 import { styles } from './styles';
+import {connect} from 'react-redux'
+import RNRestart from 'react-native-restart';
+function mapStateToProps(state){
+  return{
+    notifications:state.notifications.notifications
+  }
+}
+export const NotificationsList = connect(mapStateToProps)(({notifications, navigation}) =>{
+   const [loading,setLoading]=useState(true)
+  const renderItem = (item) =>{
 
-const DATA = [
-    {
-      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      title: 'First Item',
-    },
-    {
-      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      title: 'Second Item',
-    },
-    {
-      id: '58694a0f-3da1-471f-bd96-145571e29d72',
-      title: 'Third Item',
-    },
-    
-  ];
-
-export const NotificationsList = () =>{
-   const renderItem = () =>{
-      return <NotificationItem/>
+      return <NotificationItem {...item.item}/>
    }
+
+   useEffect(()=>{
+    setTimeout(()=>setLoading(false),500)
+   } ,notifications)
+   if(loading)return <Text>Cargando</Text>
     return(
         <View style={styles.container}>
             <FlatList
-             data={DATA}
+             data={notifications}
              renderItem={renderItem}
              keyExtractor={item => item.id}
               />
         </View>
     )
-}
+})

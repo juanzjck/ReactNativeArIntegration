@@ -7,7 +7,16 @@ export const styles=StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-between',
         alignContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity: 0.36,
+        shadowRadius: 6.68,
+
+        elevation: 11,
     },
     Logo:{
         marginLeft:10,

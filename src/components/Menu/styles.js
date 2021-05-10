@@ -7,7 +7,7 @@ export const styles=StyleSheet.create({
     },
     container:{
         backgroundColor:'#143343',
-        height:height-60,
+        height:height,
       
     }
 })
