@@ -5,8 +5,8 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
-9        android:targetSdkVersion="29" />
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="28" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 11-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:5:5-77
@@ -42,67 +42,151 @@
 23-->[:react-native-camera] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:15:9-57
 24        android:required="false" />
 24-->[:react-native-camera] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:16:9-33
-25
-26    <application
-26-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:9:5-27:19
-27        android:name="com.reactnativearintegration.MainApplication"
-27-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:10:7-38
-28        android:allowBackup="false"
-28-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:14:7-34
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
-30        android:debuggable="true"
-31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:12:7-41
-32        android:label="@string/app_name"
-32-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:11:7-39
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:13:7-52
-34        android:theme="@style/AppTheme"
-34-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:15:7-38
-35        android:usesCleartextTraffic="true" >
-35-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:8:9-44
-36        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-36-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:11:9-86
-36-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:11:19-83
-37        <activity
-37-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:16:7-26:18
-38            android:name="com.reactnativearintegration.MainActivity"
-38-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:17:9-37
-39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-39-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:19:9-86
-40            android:label="@string/app_name"
-40-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:18:9-41
-41            android:launchMode="singleTask"
-41-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:20:9-40
-42            android:windowSoftInputMode="adjustResize" >
-42-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:21:9-51
-43            <intent-filter>
-43-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:22:9-25:25
-44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:13-65
-44-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:21-62
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:13-73
-46-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:23-70
-47            </intent-filter>
-48        </activity>
-49        <activity
-49-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-50            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-50-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-51            android:exported="false"
-51-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-52            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-52-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-53
-54        <meta-data
-54-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-55            android:name="com.google.android.gms.version"
-55-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-56            android:value="@integer/google_play_services_version" />
-56-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-57    </application>
-58
-59</manifest>
+25    <uses-feature android:glEsVersion="0x00020000" />
+25-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-54
+25-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-51
+26    <uses-feature
+26-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-19:36
+27        android:name="android.hardware.touchscreen"
+27-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-52
+28        android:required="false" />
+28-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-33
+29    <uses-feature
+29-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:36
+30        android:name="android.hardware.touchscreen.multitouch"
+30-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-63
+31        android:required="false" />
+31-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-33
+32    <uses-feature
+32-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-25:36
+33        android:name="android.hardware.touchscreen.multitouch.distinct"
+33-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-72
+34        android:required="false" />
+34-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-33
+35
+36    <application
+36-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:9:5-27:19
+37        android:name="com.reactnativearintegration.MainApplication"
+37-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:10:7-38
+38        android:allowBackup="false"
+38-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:14:7-34
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:12:7-41
+43        android:label="@string/app_name"
+43-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:11:7-39
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:13:7-52
+45        android:theme="@style/AppTheme"
+45-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:15:7-38
+46        android:usesCleartextTraffic="true" >
+46-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:8:9-44
+47        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+47-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:11:9-86
+47-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\debug\AndroidManifest.xml:11:19-83
+48        <activity
+48-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:16:7-26:18
+49            android:name="com.reactnativearintegration.MainActivity"
+49-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:17:9-37
+50            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+50-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:19:9-86
+51            android:label="@string/app_name"
+51-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:18:9-41
+52            android:launchMode="singleTask"
+52-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:20:9-40
+53            android:windowSoftInputMode="adjustResize" >
+53-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:21:9-51
+54            <intent-filter>
+54-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:22:9-25:25
+55                <action android:name="android.intent.action.MAIN" />
+55-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:13-65
+55-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:21-62
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:13-73
+57-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:23-70
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+61-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2ec9c09df94dfc37352da7414ead368\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\2223598fe36b8c4b50bedc5969a6470f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+68
+69        <activity
+69-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-46:20
+70            android:name="com.unity3d.player.UnityPlayerActivity"
+70-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-66
+71            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+71-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-194
+72            android:hardwareAccelerated="false"
+72-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-48
+73            android:launchMode="singleTask"
+73-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-44
+74            android:screenOrientation="fullSensor" >
+74-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-51
+75            <intent-filter>
+75-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:22:9-25:25
+76                <action android:name="android.intent.action.MAIN" />
+76-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:13-65
+76-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:23:21-62
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:13-73
+78-->C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\app\src\main\AndroidManifest.xml:24:23-70
+79            </intent-filter>
+80
+81            <meta-data
+81-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-42:40
+82                android:name="unityplayer.UnityActivity"
+82-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-57
+83                android:value="true" />
+83-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-37
+84            <meta-data
+84-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-45:40
+85                android:name="android.notch_support"
+85-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-53
+86                android:value="true" />
+86-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:17-37
+87        </activity>
+88
+89        <meta-data
+89-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:9-50:33
+90            android:name="unity.splash-mode"
+90-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:13-45
+91            android:value="0" />
+91-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-30
+92        <meta-data
+92-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:9-53:36
+93            android:name="unity.splash-enable"
+93-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-47
+94            android:value="True" />
+94-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:13-33
+95        <meta-data
+95-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:9-56:50
+96            android:name="notch.config"
+96-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-40
+97            android:value="portrait|landscape" />
+97-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-47
+98        <meta-data
+98-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-59:68
+99            android:name="unity.build-id"
+99-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-42
+100            android:value="d8aef345-fd46-4b45-b529-3a0e2ec32cae" />
+100-->[:UnityExport] C:\Users\LENOVO\Documents\GitHub\ReactNativeArIntegration\android\UnityExport\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-65
+101    </application>
+102
+103</manifest>

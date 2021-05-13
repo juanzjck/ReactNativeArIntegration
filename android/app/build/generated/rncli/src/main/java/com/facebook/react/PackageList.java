@@ -11,6 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @asmadsen/react-native-unity-view
+import no.asmadsen.unity.view.UnityViewPackage;
 // @react-native-community/datetimepicker
 import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 // @react-native-community/masked-view
@@ -76,6 +78,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new UnityViewPackage(),
       new RNDateTimePickerPackage(),
       new RNCMaskedViewPackage(),
       new RNCPickerPackage(),
