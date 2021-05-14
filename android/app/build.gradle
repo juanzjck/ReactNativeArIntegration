@@ -198,6 +198,11 @@ android {
 }
 
 dependencies {
+    
+
+   implementation project(':UnityExport')
+    implementation fileTree(dir: project(':UnityExport').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
+   
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     implementation "com.facebook.react:react-native:+"  // From node_modules

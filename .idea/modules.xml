@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ReactNativeArIntegration.iml" filepath="$PROJECT_DIR$/.idea/ReactNativeArIntegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/UnityExport/build.gradle/ReactNativeArIntegration.build.gradle.iml" filepath="$PROJECT_DIR$/.idea/modules/android/UnityExport/build.gradle/ReactNativeArIntegration.build.gradle.iml" />
     </modules>
   </component>
 </project>

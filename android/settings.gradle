@@ -1,9 +1,13 @@
 rootProject.name = 'ReactNativeArIntegration'
+include ':@asmadsen_react-native-unity-view'
+project(':@asmadsen_react-native-unity-view').projectDir = new File(rootProject.projectDir, '../node_modules/@asmadsen/react-native-unity-view/android')
 include ':@react-native-community_datetimepicker'
 project(':@react-native-community_datetimepicker').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/datetimepicker/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
-include ':app'
+
 include ":UnityExport"
-project(":UnityExport").projectDir = file("./UnityExport")
-include ":unity-classes"
-project(":unity-classes").projectDir = file("./unity-classes")
+project(":UnityExport").projectDir = file("./UnityExport/unityLibrary")
+
+include ':app'
+//include ":unity-classes"
+//project(":unity-classes").projectDir = file("./unity-classes")
