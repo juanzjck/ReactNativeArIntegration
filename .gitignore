@@ -2,4 +2,4 @@ unity/
 node_modules/
 android/build/
 android/app/build/
- package-lock.json
+package-lock.json
